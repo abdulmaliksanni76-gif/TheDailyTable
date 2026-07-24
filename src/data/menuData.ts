@@ -1,0 +1,237 @@
+export interface MenuItem {
+  id: string
+  name: string
+  description: string
+  price: number
+  image: string
+  category: string
+  rating: number
+  isPopular?: boolean
+}
+
+export const menuCategories = [
+  { id: 'all', name: 'All', icon: '🍽️' },
+  { id: 'rice', name: 'Rice', icon: '🍚' },
+  { id: 'grills', name: 'Grills', icon: '🍖' },
+  { id: 'shawarma', name: 'Shawarma', icon: '🌯' },
+  { id: 'drinks', name: 'Drinks', icon: '🍹' },
+  { id: 'desserts', name: 'Desserts', icon: '🍰' },
+  { id: 'local', name: 'Local Dishes', icon: '🥘' },
+]
+
+export const menuItems: MenuItem[] = [
+  // Rice
+  {
+    id: '1',
+    name: 'Jollof Rice Special',
+    description: 'Our signature smoky jollof rice with perfectly seasoned tomato base, served with your choice of protein',
+    price: 4500,
+    image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500',
+    category: 'rice',
+    rating: 4.9,
+    isPopular: true,
+  },
+  {
+    id: '2',
+    name: 'Fried Rice Deluxe',
+    description: 'Colorful fried rice loaded with vegetables, shrimp, and chicken, garnished with fresh herbs',
+    price: 4800,
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500',
+    category: 'rice',
+    rating: 4.7,
+  },
+  {
+    id: '3',
+    name: 'Coconut Rice',
+    description: 'Fragrant rice cooked in rich coconut milk with aromatic spices and herbs',
+    price: 4200,
+    image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500',
+    category: 'rice',
+    rating: 4.6,
+  },
+  {
+    id: '4',
+    name: 'Native Jollof',
+    description: 'Traditional palm oil jollof rice with local spices and smoked fish',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1567982047351-76b6f93e38ee?w=500',
+    category: 'rice',
+    rating: 4.8,
+    isPopular: true,
+  },
+  // Grills
+  {
+    id: '5',
+    name: 'Grilled Chicken Platter',
+    description: 'Succulent whole chicken marinated in our secret spice blend, grilled to perfection',
+    price: 8500,
+    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500',
+    category: 'grills',
+    rating: 4.9,
+    isPopular: true,
+  },
+  {
+    id: '6',
+    name: 'Suya Skewers',
+    description: 'Traditional Nigerian beef suya with groundnut spice coating and fresh onions',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500',
+    category: 'grills',
+    rating: 4.8,
+  },
+  {
+    id: '7',
+    name: 'Grilled Catfish',
+    description: 'Fresh catfish seasoned with African spices, grilled and served with pepper sauce',
+    price: 9500,
+    image: 'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=500',
+    category: 'grills',
+    rating: 4.7,
+  },
+  {
+    id: '8',
+    name: 'Mixed Grill Feast',
+    description: 'A combination of chicken, beef, and sausages with grilled vegetables',
+    price: 12000,
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500',
+    category: 'grills',
+    rating: 4.9,
+    isPopular: true,
+  },
+  // Shawarma
+  {
+    id: '9',
+    name: 'Classic Beef Shawarma',
+    description: 'Tender beef strips with fresh vegetables, garlic sauce in warm pita bread',
+    price: 3200,
+    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500',
+    category: 'shawarma',
+    rating: 4.6,
+  },
+  {
+    id: '10',
+    name: 'Chicken Shawarma Deluxe',
+    description: 'Juicy chicken with special sauce, pickles, and crispy fries in a wrap',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1561651823-34feb02250e4?w=500',
+    category: 'shawarma',
+    rating: 4.8,
+    isPopular: true,
+  },
+  {
+    id: '11',
+    name: 'Shawarma Bowl',
+    description: 'Deconstructed shawarma served over seasoned rice with all the toppings',
+    price: 4500,
+    image: 'https://images.unsplash.com/photo-1547496502-affa22d38842?w=500',
+    category: 'shawarma',
+    rating: 4.5,
+  },
+  // Drinks
+  {
+    id: '12',
+    name: 'Chapman',
+    description: 'Classic Nigerian cocktail with Fanta, Sprite, grenadine, and fresh fruits',
+    price: 1800,
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500',
+    category: 'drinks',
+    rating: 4.7,
+    isPopular: true,
+  },
+  {
+    id: '13',
+    name: 'Zobo Delight',
+    description: 'Refreshing hibiscus drink infused with ginger, cloves, and natural sweeteners',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500',
+    category: 'drinks',
+    rating: 4.6,
+  },
+  {
+    id: '14',
+    name: 'Fresh Fruit Smoothie',
+    description: 'Blend of seasonal tropical fruits with yogurt and honey',
+    price: 2200,
+    image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=500',
+    category: 'drinks',
+    rating: 4.8,
+  },
+  {
+    id: '15',
+    name: 'Palm Wine',
+    description: 'Traditional fresh palm wine served chilled',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500',
+    category: 'drinks',
+    rating: 4.4,
+  },
+  // Desserts
+  {
+    id: '16',
+    name: 'Puff Puff Bites',
+    description: 'Golden fried dough balls dusted with cinnamon sugar and chocolate drizzle',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500',
+    category: 'desserts',
+    rating: 4.7,
+  },
+  {
+    id: '17',
+    name: 'Chin Chin Platter',
+    description: 'Crunchy fried pastry strips with various dipping sauces',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500',
+    category: 'desserts',
+    rating: 4.5,
+  },
+  {
+    id: '18',
+    name: 'Ice Cream Sundae',
+    description: 'Three scoops of premium ice cream with chocolate sauce and wafers',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500',
+    category: 'desserts',
+    rating: 4.8,
+    isPopular: true,
+  },
+  // Local Dishes
+  {
+    id: '19',
+    name: 'Egusi Soup & Pounded Yam',
+    description: 'Rich melon seed soup with assorted meat served with smooth pounded yam',
+    price: 6500,
+    image: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=500',
+    category: 'local',
+    rating: 4.9,
+    isPopular: true,
+  },
+  {
+    id: '20',
+    name: 'Pepper Soup',
+    description: 'Spicy aromatic soup with catfish and traditional herbs',
+    price: 5500,
+    image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500',
+    category: 'local',
+    rating: 4.7,
+  },
+  {
+    id: '21',
+    name: 'Amala & Ewedu',
+    description: 'Yam flour swallow served with jute leaves soup and gbegiri',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500',
+    category: 'local',
+    rating: 4.6,
+  },
+  {
+    id: '22',
+    name: 'Ofada Rice & Sauce',
+    description: 'Local brown rice served with spicy palm oil based sauce',
+    price: 5500,
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500',
+    category: 'local',
+    rating: 4.8,
+  },
+]
+
+export const featuredDishes = menuItems.filter(item => item.isPopular)
